@@ -1,5 +1,5 @@
 {
-  "name": "@coreui/angular-dev",
+  "name": "@spencermayne/coreui-angular",
   "version": "2.9.0",
   "license": "MIT",
   "author": {
@@ -14,6 +14,9 @@
       "url": "https://github.com/xidedix"
     }
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "ng": "ng",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
@@ -28,7 +31,6 @@
     "link": "cd dist/@coreui/angular/ && npm link",
     "release-version": "node build/change-version.js"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.0",
     "@angular/common": "~9.0.0",
